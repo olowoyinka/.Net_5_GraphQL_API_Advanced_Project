@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_MongoDB\\GraphQL_MongoDB.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_MongoDB\\GraphQL_MongoDB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_MongoDB\\GraphQL_MongoDB.csproj",
+        "projectName": "GraphQL_MongoDB",
+        "projectPath": "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_MongoDB\\GraphQL_MongoDB.csproj",
+        "packagesPath": "C:\\Users\\olowoyinka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_MongoDB\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\olowoyinka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\olowoyinka\\Downloads": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "GraphQL.Server.Ui.Voyager": {
+              "target": "Package",
+              "version": "[4.4.1, )"
+            },
+            "HotChocolate": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "HotChocolate.AspNetCore": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "HotChocolate.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "HotChocolate.Data.MongoDb": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "HotChocolate.Subscriptions.InMemory": {
+              "target": "Package",
+              "version": "[12.12.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.11, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.17.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.409\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -33,6 +33,9 @@
     ".NETCoreApp,Version=v5.0": {
       "GraphQL_UserBoarding/1.0.0": {
         "dependencies": {
+          "DataAnnotatedModelValidations": "1.5.3",
+          "FluentValidation": "11.2.2",
+          "Graph.ArgumentValidator": "2.1.2",
           "GraphQL.Server.Ui.Voyager": "4.4.1",
           "HotChocolate.AspNetCore": "12.12.1",
           "HotChocolate.AspNetCore.Authorization": "12.12.1",
@@ -326,6 +329,45 @@
         },
         "compile": {
           "GraphQL_UserBoarding.dll": {}
+        }
+      },
+      "DataAnnotatedModelValidations/1.5.3": {
+        "dependencies": {
+          "HotChocolate.Execution": "12.12.1"
+        },
+        "runtime": {
+          "lib/net5.0/DataAnnotatedModelValidations.dll": {
+            "assemblyVersion": "1.5.3.0",
+            "fileVersion": "1.5.3.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/DataAnnotatedModelValidations.dll": {}
+        }
+      },
+      "FluentValidation/11.2.2": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "11.0.0.0",
+            "fileVersion": "11.2.2.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/FluentValidation.dll": {}
+        }
+      },
+      "Graph.ArgumentValidator/2.1.2": {
+        "dependencies": {
+          "HotChocolate.Execution": "12.12.1"
+        },
+        "runtime": {
+          "lib/net5.0/Graph.ArgumentValidator.dll": {
+            "assemblyVersion": "2.1.2.0",
+            "fileVersion": "2.1.2.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Graph.ArgumentValidator.dll": {}
         }
       },
       "GraphQL.Server.Ui.Voyager/4.4.1": {
@@ -3438,6 +3480,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "DataAnnotatedModelValidations/1.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JE/zSu2XdqmUA/uT+oSQyV35bGP0IUPAQmow/GSqPmilmHFj4RiaOaRj057KkK3hCUKLJ/cKEYhUKJZp7S4JWg==",
+      "path": "dataannotatedmodelvalidations/1.5.3",
+      "hashPath": "dataannotatedmodelvalidations.1.5.3.nupkg.sha512"
+    },
+    "FluentValidation/11.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5QEte2BUZZF6Sezeekr7Zu1THfgpxU7pmuL2SjIrajuGMah+pxPGiRiLtw+x/tSUSSVmcv9LrUe41lKu4l0n4A==",
+      "path": "fluentvalidation/11.2.2",
+      "hashPath": "fluentvalidation.11.2.2.nupkg.sha512"
+    },
+    "Graph.ArgumentValidator/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hhvWLAzgSLfq8TRZLnwZAwXCg17Z4EhpGd/dKDj2BmP05TFzHMs3/tOH0lymCGmq7jE3cVEPg6rEmHQ7+7KGiw==",
+      "path": "graph.argumentvalidator/2.1.2",
+      "hashPath": "graph.argumentvalidator.2.1.2.nupkg.sha512"
     },
     "GraphQL.Server.Ui.Voyager/4.4.1": {
       "type": "package",

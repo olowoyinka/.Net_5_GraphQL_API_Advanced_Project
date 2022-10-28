@@ -5,6 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DataAnnotatedModelValidations" Version="1.5.3" />
+    <PackageReference Include="FluentValidation" Version="11.2.2" />
+    <PackageReference Include="Graph.ArgumentValidator" Version="2.1.2" />
     <PackageReference Include="GraphQL.Server.Ui.Voyager" Version="4.4.1" />
     <PackageReference Include="HotChocolate.AspNetCore" Version="12.12.1" />
     <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="12.12.1" />

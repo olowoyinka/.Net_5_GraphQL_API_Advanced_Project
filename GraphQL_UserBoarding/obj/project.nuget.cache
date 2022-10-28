@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "TeRQ8axwW94WX9wvqJ61j5lcwTqcW6XVryB315wlgqPNkZx9VYcKQE/T9IbiLRMpKz2d2SxJx8pAxtFBfb2sbg==",
+  "dgSpecHash": "6NdqhM8fbxADDxl4CmARFcdFP9nImJjJ5BfwVZnhabGadU+uO7GHwxw7cweUaXineRfmRL9izN/Il+YZq0t5dA==",
   "success": true,
   "projectFilePath": "C:\\Users\\olowoyinka\\source\\repos\\GraphQL_Advanced\\GraphQL_UserBoarding\\GraphQL_UserBoarding.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\olowoyinka\\.nuget\\packages\\dataannotatedmodelvalidations\\1.5.3\\dataannotatedmodelvalidations.1.5.3.nupkg.sha512",
+    "C:\\Users\\olowoyinka\\.nuget\\packages\\fluentvalidation\\11.2.2\\fluentvalidation.11.2.2.nupkg.sha512",
+    "C:\\Users\\olowoyinka\\.nuget\\packages\\graph.argumentvalidator\\2.1.2\\graph.argumentvalidator.2.1.2.nupkg.sha512",
     "C:\\Users\\olowoyinka\\.nuget\\packages\\graphql.server.ui.voyager\\4.4.1\\graphql.server.ui.voyager.4.4.1.nupkg.sha512",
     "C:\\Users\\olowoyinka\\.nuget\\packages\\greendonut\\12.12.1\\greendonut.12.12.1.nupkg.sha512",
     "C:\\Users\\olowoyinka\\.nuget\\packages\\hotchocolate\\12.12.1\\hotchocolate.12.12.1.nupkg.sha512",

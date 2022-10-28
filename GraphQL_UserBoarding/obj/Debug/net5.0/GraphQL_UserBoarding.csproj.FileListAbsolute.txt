@@ -91,3 +91,6 @@ C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\obj\Debug
 C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\obj\Debug\net5.0\GraphQL_UserBoarding.genruntimeconfig.cache
 C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\bin\Debug\net5.0\HotChocolate.AspNetCore.Authorization.dll
+C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\bin\Debug\net5.0\DataAnnotatedModelValidations.dll
+C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\bin\Debug\net5.0\Graph.ArgumentValidator.dll
+C:\Users\olowoyinka\source\repos\GraphQL_Advanced\GraphQL_UserBoarding\bin\Debug\net5.0\FluentValidation.dll

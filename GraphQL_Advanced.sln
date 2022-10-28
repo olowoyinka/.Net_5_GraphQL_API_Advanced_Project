@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL_CRUD", "GraphQL_CRU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL_UserBoarding", "GraphQL_UserBoarding\GraphQL_UserBoarding.csproj", "{76796AB7-C0F2-460B-B974-EDC43F589347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL_MongoDB", "GraphQL_MongoDB\GraphQL_MongoDB.csproj", "{FFB3F358-6775-4C80-BB6F-EBA187DAF4B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GraphQL_MongoDB", "GraphQL_MongoDB\GraphQL_MongoDB.csproj", "{FFB3F358-6775-4C80-BB6F-EBA187DAF4B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL_Project", "GraphQL_Project\GraphQL_Project.csproj", "{56D15B0B-7ED7-4C2D-997F-93055E627934}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FFB3F358-6775-4C80-BB6F-EBA187DAF4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFB3F358-6775-4C80-BB6F-EBA187DAF4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFB3F358-6775-4C80-BB6F-EBA187DAF4B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56D15B0B-7ED7-4C2D-997F-93055E627934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D15B0B-7ED7-4C2D-997F-93055E627934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D15B0B-7ED7-4C2D-997F-93055E627934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D15B0B-7ED7-4C2D-997F-93055E627934}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

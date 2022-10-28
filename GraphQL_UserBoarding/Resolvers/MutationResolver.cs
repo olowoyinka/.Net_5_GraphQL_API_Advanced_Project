@@ -14,12 +14,27 @@ namespace GraphQL_UserBoarding.Resolvers
 
         public TokenResponseModel Login([Service] IAuthLogic authLogic, LoginInputType loginInput)
         {
+            kdkd();
+
             return authLogic.Login(loginInput);
         }
 
         public TokenResponseModel RenewAccessToken([Service] IAuthLogic authLogic, RenewTokenInputType renewToken)
         {
             return authLogic.RenewAccessToken(renewToken);
+        }
+
+        private void kdkd()
+        {
+            var gg = ErrorBuilder.New()
+               .SetMessage("This is the jjj message")
+               .SetCode("YOURCODE00000123")
+               .Build();
+
+            if ("ddd" != "ff")
+            {
+                throw new GraphQLException(gg);
+            }
         }
     }
 }

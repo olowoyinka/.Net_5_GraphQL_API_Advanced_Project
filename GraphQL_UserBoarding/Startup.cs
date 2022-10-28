@@ -1,11 +1,14 @@
+using Graph.ArgumentValidator;
 using GraphQL.Server.Ui.Voyager;
 using GraphQL_UserBoarding.Data;
+using GraphQL_UserBoarding.InputTypes;
 using GraphQL_UserBoarding.Logics;
 using GraphQL_UserBoarding.Resolvers;
 using GraphQL_UserBoarding.Shared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -35,7 +38,10 @@ namespace GraphQL_UserBoarding
             services.AddDbContext<AppDbContext>(options =>
                              options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
+            services.AddErrorFilter<GraphQLErrorFilter>();
+
             services.AddGraphQLServer()
+                    .AddArgumentValidator()
                     .AddAuthorization()
                     .AddQueryType<QueryResolver>()
                     .AddMutationType<MutationResolver>();
@@ -63,6 +69,11 @@ namespace GraphQL_UserBoarding
                     ValidateLifetime = true,
                     ClockSkew = TimeSpan.FromMinutes(1)
                 };
+            });
+
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                options.SuppressModelStateInvalidFilter = true;
             });
 
             services.AddAuthorization(options => {

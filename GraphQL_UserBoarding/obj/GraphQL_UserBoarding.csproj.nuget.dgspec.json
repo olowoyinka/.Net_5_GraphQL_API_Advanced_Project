@@ -44,6 +44,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "DataAnnotatedModelValidations": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Graph.ArgumentValidator": {
+              "target": "Package",
+              "version": "[2.1.2, )"
+            },
             "GraphQL.Server.Ui.Voyager": {
               "target": "Package",
               "version": "[4.4.1, )"

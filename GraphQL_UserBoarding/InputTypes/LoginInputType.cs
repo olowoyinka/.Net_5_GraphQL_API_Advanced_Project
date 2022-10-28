@@ -1,11 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Graph.ArgumentValidator;
+using System.ComponentModel.DataAnnotations;
 
 namespace GraphQL_UserBoarding.InputTypes
 {
+    [Validatable]
     public class LoginInputType
     {
         [Required]
-        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
         public string Email { get; set; }
 
         [Required]

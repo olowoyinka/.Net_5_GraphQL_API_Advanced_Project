@@ -13,12 +13,23 @@ namespace GraphQL_Project.Schema.Subscriptions
         [Subscribe]
         public CourseResult CourseCreated([EventMessage] CourseResult course) => course;
 
+        [Subscribe]
+        public InstructorResult InstructorCreated([EventMessage] InstructorResult instructor) => instructor;
+
         [SubscribeAndResolve]
         public ValueTask<ISourceStream<CourseResult>> CourseUpdated(Guid courseId, [Service] ITopicEventReceiver topicEventReceiver)
         {
             string topicName = $"{courseId}_{nameof(Subscription.CourseUpdated)}";
 
             return topicEventReceiver.SubscribeAsync<string, CourseResult>(topicName);
+        }
+
+        [SubscribeAndResolve]
+        public ValueTask<ISourceStream<InstructorResult>> InstructorUpdated(Guid instructorId, [Service] ITopicEventReceiver topicEventReceiver)
+        {
+            string topicName = $"{instructorId}_{nameof(Subscription.InstructorUpdated)}";
+
+            return topicEventReceiver.SubscribeAsync<string, InstructorResult>(topicName);
         }
     }
 }

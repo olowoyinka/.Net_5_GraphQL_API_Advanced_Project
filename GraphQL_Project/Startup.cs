@@ -16,6 +16,7 @@ using FirebaseAdminAuthentication.DependencyInjection.Extensions;
 using FirebaseAdmin;
 using FirebaseAdminAuthentication.DependencyInjection.Models;
 using Graph.ArgumentValidator;
+using Google.Apis.Auth.OAuth2;
 
 namespace GraphQL_Project
 {
@@ -35,16 +36,27 @@ namespace GraphQL_Project
                     .AddArgumentValidator()
                     .AddQueryType<Query>()
                     .AddTypeExtension<CourseQuery>()
+                    .AddTypeExtension<InstructorQuery>()
                     .AddType<CourseType>()
                     .AddType<InstructorType>()
                     .AddMutationType<Mutation>()
+                    .AddTypeExtension<CourseMutation>()
+                    .AddTypeExtension<InstructorMutation>()
                     .AddSubscriptionType<Subscription>()
                     .AddFiltering()
                     .AddSorting()
                     .AddProjections()
                     .AddAuthorization();
 
-            services.AddSingleton(FirebaseApp.Create());
+            //services.AddSingleton(FirebaseApp.Create(new AppOptions()
+            //{
+            //    Credential = GoogleCredential.FromFile(Configuration.GetValue<string>("FIREBASE_CONFIG_PATH"))
+            //}));
+
+            services.AddSingleton(FirebaseApp.Create(new AppOptions()
+            {
+                Credential = GoogleCredential.FromJson(Configuration.GetValue<string>("FIREBASE_CONFIG"))
+            }));
 
             services.AddFirebaseAuthentication();
 

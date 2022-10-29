@@ -1,20 +1,18 @@
 ﻿using Graph.ArgumentValidator;
-using GraphQL_Project.Models;
-using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace GraphQL_Project.Schema.Mutations
 {
     [Validatable]
-    public class CourseInputType
+    public class InstructorInputType
     {
         [Required]
-        public string Name { get; set; }
+        public string FirstName { get; set; }
 
         [Required]
-        public Subject Subject { get; set; }
-
+        public string LastName { get; set; }
+        
         [Required]
-        public Guid InstructorId { get; set; }
+        public double Salary { get; set; }
     }
 }
